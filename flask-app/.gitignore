@@ -1,0 +1,4 @@
+# Ignore Terraform directories and provider binaries
+.terraform/
+*.tfstate
+*.tfstate.backup

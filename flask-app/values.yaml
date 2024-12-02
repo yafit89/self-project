@@ -1,0 +1,18 @@
+serviceAccount:
+  create: true
+  yafit: flask-app-sa
+yafit: default
+service:
+  type: ClusterIP
+  port: 8080
+ingress:
+  enabled: false
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+image:
+  repository: yafit12/flask-app
+  tag: latest
+  pullPolicy: IfNotPresent
