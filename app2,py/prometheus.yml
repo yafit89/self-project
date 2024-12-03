@@ -1,0 +1,9 @@
+# prometheus.yml
+global:
+  scrape_interval: 15s  # כל כמה זמן לאסוף נתונים
+
+scrape_configs:
+  - job_name: 'predict_app'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['localhost:5001']

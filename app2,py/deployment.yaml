@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predict-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: predict-app
+  template:
+    metadata:
+      labels:
+        app: predict-app
+    spec:
+      containers:
+      - name: predict-container
+        image: predict-app:latest
+        ports:
+        - containerPort: 5001
