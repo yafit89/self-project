@@ -29,5 +29,5 @@ The `Predict-App` generates random prediction values and exposes them as metrics
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/yafit89/self-project.git
+    cd self-project
